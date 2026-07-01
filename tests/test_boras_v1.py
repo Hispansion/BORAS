@@ -1,9 +1,18 @@
 from pathlib import Path
 
+import cbor2
 import itertools
 import numpy as np
+import rasterio as rio
 
 import BORAS_v1
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+TEST_CASE_A_DEM = PROJECT_ROOT / "data" / "dems" / "test_case_A.tif"
+TEST_CASE_B_DEM = PROJECT_ROOT / "data" / "dems" / "test_case_B.tif"
+TEST_CASE_A_CBOR = PROJECT_ROOT / "data" / "illumination" / "test_case_A.cbor"
+TEST_CASE_B_CBOR = PROJECT_ROOT / "data" / "illumination" / "test_case_B.cbor"
 
 
 def _always_lit_roots(shape):
@@ -199,3 +208,33 @@ def test_tsp_closed_tdd_smoke():
     assert len(departures) == len(waypoints)
     assert segment_paths[0][0] == waypoints[best_order[-1]]
     assert segment_paths[-1][-1] == waypoints[best_order[-1]]
+
+
+def test_real_fixture_static_spp_on_test_case_a():
+    with rio.open(TEST_CASE_A_DEM) as dataset:
+        slope_dem = dataset.read(1).astype("float64")
+
+    traverse_time, path = BORAS_v1.djikistras((8, 1), (1, 8), slope_dem)
+
+    assert traverse_time > 0
+    assert path[0] == (8, 1)
+    assert path[-1] == (1, 8)
+    assert len(path) > 2
+
+
+def test_real_fixture_tdd_spp_on_test_case_b():
+    with rio.open(TEST_CASE_B_DEM) as dataset:
+        slope_dem = dataset.read(1).astype("float64")
+    with open(TEST_CASE_B_CBOR, "rb") as fixture:
+        roots = cbor2.load(fixture)
+
+    start_times = BORAS_v1.generate_time_range(11000.0, 11000.2, 0.05)
+    departure_time, path, traverse_time, path_times = BORAS_v1.TDD_expanded(
+        (13, 1), (1, 13), slope_dem, roots, start_times
+    )
+
+    assert departure_time == start_times[0]
+    assert traverse_time > 0
+    assert path[0] == (13, 1)
+    assert path[-1] == (1, 13)
+    assert path_times

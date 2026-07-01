@@ -16,6 +16,10 @@ dist/
 *.tiff
 *.cbor
 *.pickle
+!data/dems/test_case_A.tif
+!data/dems/test_case_B.tif
+!data/illumination/test_case_A.cbor
+!data/illumination/test_case_B.cbor
 
 # Generated figures and scratch outputs
 *.png
