@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boras"
+version = "0.1.0"
+description = "Basic Operation Rover Analysis Software"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "astropy",
+    "cbor2",
+    "elevation",
+    "matplotlib",
+    "networkx",
+    "numba",
+    "numpy",
+    "pandas",
+    "pyproj",
+    "rasterio",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools]
+py-modules = ["BORAS_v1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

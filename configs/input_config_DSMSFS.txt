@@ -1,0 +1,14 @@
+mean_speed=0.0175
+start_epoch=
+start_time_range_start=
+start_time_range_end=
+start_time_range_resolution=
+time_dependent=False
+mode='Single'
+tsp_mode=
+algorithm='GA'
+pop_size=
+max_generations=
+filename='sfs_slope_200m.tif'
+illumination_filename=
+waypoints=[(120,100),(350,100)]

@@ -1,0 +1,14 @@
+mean_speed=0.0175
+start_epoch=
+start_time_range_start=
+start_time_range_end=
+start_time_range_resolution=
+time_dependent=False
+mode='Single'
+tsp_mode=
+algorithm='Dijkistra'
+pop_size=
+max_generations=
+filename='lunargem_4to5_2m_slope_1m.tif'
+illumination_filename=
+waypoints=[(121,84),(350,100)]

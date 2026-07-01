@@ -1,0 +1,14 @@
+mean_speed=0.0175
+start_epoch=
+start_time_range_start=
+start_time_range_end=
+start_time_range_resolution=
+time_dependent=False
+mode='Tour'
+tsp_mode='OL'
+algorithm='GA'
+pop_size=16
+max_generations=250
+filename='lunargem_4to5_2m_slope_1m.tif'
+illumination_filename=
+waypoints=[(53,53),(80,345),(234,253),(347,56),(125,190)]

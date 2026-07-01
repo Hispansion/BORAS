@@ -1,0 +1,14 @@
+mean_speed=
+start_epoch='2029-01-08 00:00:00.000'
+start_time_range_start=11330
+start_time_range_end=11331
+start_time_range_resolution=0.01
+time_dependent=True
+mode='Single'
+tsp_mode=
+algorithm='TDD'
+pop_size=
+max_generations=
+filename='aarls4_50x50_slope.tif'
+illumination_filename='aarls4_rover_traverse_small_Sun_1.0m_2031_roots.cbor'
+waypoints=[(1,12),(43,44)]

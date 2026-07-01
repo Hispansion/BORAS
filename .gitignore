@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Large research datasets and generated binaries
+*.tif
+*.tiff
+*.cbor
+*.pickle
+
+# Generated figures and scratch outputs
+*.png
+output*.png
+results*.pickle
+best_paths*.pickle
+crop-file
