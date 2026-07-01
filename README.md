@@ -9,6 +9,7 @@ This repository contains the main `BORAS_v1.py` library together with the `noteb
 - `BORAS_v1.py`: main library used by the current workflow.
 - `notebooks/`: experiment and validation notebooks, including `TSP_SPP_v2.ipynb`.
 - `configs/`: input configuration files for selecting maps and runtime parameters.
+- `data/`: DEM, illumination, and other local input assets used by the workflows.
 - `scripts/legacy/`: older algorithm versions retained for reference.
 - `scripts/tools/`: helper scripts for generating test cases and preprocessing data.
 - `tests/`: initial automated checks for the core library.
@@ -36,7 +37,7 @@ Keep the remote repository private for now. When you create it on GitHub, GitLab
 ## Notes
 
 - Large map files, CBOR illumination files, pickles, and generated outputs are intentionally ignored by Git.
-- The current cleanup keeps research datasets in place to avoid breaking existing experiments. A later pass can move datasets into a dedicated `data/` layout once the notebook/file path assumptions are fully consolidated.
+- DEM and CBOR inputs are organized under `data/` for easier local access while remaining untracked in Git.
 
 ## First Push Checklist
 

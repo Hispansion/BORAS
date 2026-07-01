@@ -9,6 +9,7 @@ tsp_mode=
 algorithm='TDD'
 pop_size=
 max_generations=
-filename='aarls4_50x50_slope.tif'
-illumination_filename='aarls4_rover_traverse_small_Sun_1.0m_2031_roots.cbor'
+filename='data/dems/aarls4_50x50_slope.tif'
+illumination_filename='data/illumination/aarls4_rover_traverse_small_Sun_1.0m_2031_roots.cbor'
 waypoints=[(1,12),(43,44)]
+

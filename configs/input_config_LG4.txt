@@ -9,6 +9,6 @@ tsp_mode='OL'
 algorithm='Dijkistra'
 pop_size=32
 max_generations=250
-filename='plateau_2m_slope_1m_fixed.tif'
+filename='data/dems/plateau_2m_slope_1m_fixed.tif'
 illumination_filename=
 waypoints= [(2973, 784),(2793, 948),(2655, 1078),(2666, 1366),(2474, 1560),(2672, 1706),(2529, 2115),(2575, 2412),(2672, 2558),(2996, 2637),(3117, 3049),(2741, 1454),(2727,1797),(2649,2145)]

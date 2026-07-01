@@ -9,6 +9,7 @@ tsp_mode='CL'
 algorithm='GA'
 pop_size=16
 max_generations=250
-filename='aarls4_50x50_slope.tif'
-illumination_filename='aarls4_rover_traverse_small_Sun_1.0m_2031_roots.cbor'
+filename='data/dems/aarls4_50x50_slope.tif'
+illumination_filename='data/illumination/aarls4_rover_traverse_small_Sun_1.0m_2031_roots.cbor'
 waypoints=[(1,1),(41,48),(22,22),(43,4)]
+

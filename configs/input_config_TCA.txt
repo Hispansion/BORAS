@@ -9,6 +9,7 @@ tsp_mode=
 algorithm='TDD'
 pop_size=
 max_generations=
-filename='test_case_A.tif'
-illumination_filename='test_case_A.cbor'
+filename='data/dems/test_case_A.tif'
+illumination_filename='data/illumination/test_case_A.cbor'
 waypoints=[(1,8),(8,1)]
+

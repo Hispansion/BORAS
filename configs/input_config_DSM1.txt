@@ -9,6 +9,7 @@ tsp_mode=
 algorithm='Dijkistra'
 pop_size=
 max_generations=
-filename='DEM-1.tif'
+filename='data/dems/DEM-1.tif'
 illumination_filename=
 waypoints=[(10,150),(151,115)]
+
