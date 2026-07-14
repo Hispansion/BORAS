@@ -32,5 +32,5 @@ pytest
 
 ## Visibility
 
-The remote repository should remain private until you explicitly decide to publish or share it more broadly.
+The remote repository should remain private until  explicitly decide to publish or share it more broadly.
 
