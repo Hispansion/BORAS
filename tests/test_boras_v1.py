@@ -238,3 +238,14 @@ def test_real_fixture_tdd_spp_on_test_case_b():
     assert path[0] == (13, 1)
     assert path[-1] == (1, 13)
     assert path_times
+
+
+def test_all_config_referenced_assets_exist():
+    for config_path in sorted((PROJECT_ROOT / "configs").glob("*.txt")):
+        params = BORAS_v1.parse_input_file(config_path)
+        for key in ("filename", "illumination_filename"):
+            asset = params.get(key)
+            if asset:
+                assert (PROJECT_ROOT / asset).exists(), (
+                    f"{config_path.name} references missing asset: {asset}"
+                )
