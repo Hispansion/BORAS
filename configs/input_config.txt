@@ -1,15 +1,19 @@
+# Quick start: a static open tour on the included test map.
+# Tour runs TSP; Single runs a path between the first two waypoints.
+# OL is an open tour; CL returns to the starting waypoint.
+# Waypoints are row and column positions in the DEM.
 mean_speed=0.0175
-start_epoch='2028-02-13 00:00:00.001'
-start_time_range_start=11000.0
-start_time_range_end=11001.0
-start_time_range_resolution=0.1
-time_dependent=True
-mode='Single'
+start_epoch=
+start_time_range_start=
+start_time_range_end=
+start_time_range_resolution=
+time_dependent=False
+mode='Tour'
 tsp_mode='OL'
-algorithm='TDD'
-pop_size=16
-max_generations=25
+algorithm='Dijkstra'
+pop_size=8
+max_generations=5
 filename='data/dems/test_case_B.tif'
-illumination_filename='data/illumination/test_case_B.cbor'
-waypoints=[(13,1),(1,13)]
+illumination_filename=
+waypoints=[(13,1),(1,13),(13,13)]
 
