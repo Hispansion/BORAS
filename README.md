@@ -10,6 +10,8 @@ For a normal run, you only need three project files:
 
 The other notebooks, configs, and tools are kept as research examples. The `data/` folder holds the DEM and illumination inputs referenced by the configs.
 
+For the concepts and methods behind BORAS, read Carlos Aguilar Borasteros's MSc thesis, [*Development of a Concept for AI-supported Lunar Surface Navigation*](https://www.researchgate.net/publication/394464164_Development_of_a_Concept_for_AI-supported_Lunar_Surface_Navigation). It covers lunar rover path planning, SPP and TSP, and static and time-dependent approaches.
+
 ## Run BORAS
 
 From the repository root, create a Python 3.11 environment. On Windows PowerShell:
