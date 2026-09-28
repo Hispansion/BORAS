@@ -42,10 +42,11 @@ In the config, `mode='Tour'` runs TSP and `mode='Single'` runs one path. For tou
 ## License
 
 Copyright (c) Carlos Aguilar Borasteros. The BORAS software is published by
-Hispansion with the copyright holder's permission under the ESA Software
-Community License - Type 3 - v1.1. Read [LICENSE](LICENSE) and the complete
-license text in [LICENSE.pdf](LICENSE.pdf). This license grants rights within
-ESA Member States, not throughout all of Europe, and does not imply ESA
+[Hispansion](https://www.hispansion.io/) with the copyright holder's permission
+under the ESA Software Community License - Type 3 - v1.1. Read
+[LICENSE](LICENSE) and the complete license text in [LICENSE.pdf](LICENSE.pdf).
+This license grants rights within ESA Member States, not throughout all of
+Europe, and does not imply ESA
 ownership or endorsement. The input datasets under `data/` are not licensed
 for reuse; see [NOTICE](NOTICE).
 
@@ -74,9 +75,9 @@ python -m pytest
 
 ## Availability
 
-Hispansion publishes this repository publicly. Public access does not expand
-the software license beyond ESA Member States or grant rights to the bundled
-input datasets.
+[Hispansion](https://www.hispansion.io/) publishes this repository publicly.
+Public access does not expand the software license beyond ESA Member States
+or grant rights to the bundled input datasets.
 
 ## Notes
 
