@@ -1,0 +1,16 @@
+BORAS software is licensed under the ESA Software Community License - Type 3 - v1.1.
+
+The complete, unmodified license text is included in LICENSE.pdf and is also
+available from the European Space Agency at:
+https://eop-cfi.esa.int/Repo/PUBLIC/DOCUMENTATION/LICENSING/1.1/ESCL_1.1_Type_3.pdf
+
+Copyright holder: Carlos Aguilar Borasteros.
+Published by Hispansion with the copyright holder's permission.
+
+The license grants rights only within ESA Member States. It does not transfer
+copyright ownership to Hispansion or ESA, or imply ESA endorsement.
+
+The input datasets under data/ are not licensed by this software license.
+See NOTICE for the scope of this release.
+
+For commercial use or licensing questions, contact info@hispansion.io.

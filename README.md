@@ -4,6 +4,19 @@ BORAS stands for Basic Operation Rover Analysis Software.
 
 This repository contains the main `BORAS_v1.py` library together with the `notebooks/TSP_SPP_v2.ipynb` workflow used to run the core rover path-planning experiments. Legacy scripts, utility generators, and supporting notebooks are organized into dedicated folders so the active code path stays easy to find.
 
+## License
+
+Copyright (c) Carlos Aguilar Borasteros. The BORAS software is published by
+Hispansion with the copyright holder's permission under the ESA Software
+Community License - Type 3 - v1.1. Read [LICENSE](LICENSE) and the complete
+license text in [LICENSE.pdf](LICENSE.pdf). This license grants rights within
+ESA Member States, not throughout all of Europe, and does not imply ESA
+ownership or endorsement. The input datasets under `data/` are not licensed
+for reuse; see [NOTICE](NOTICE).
+
+For commercial use or licensing questions, contact
+[info@hispansion.io](mailto:info@hispansion.io).
+
 ## Project Layout
 
 - `BORAS_v1.py`: main library used by the current workflow.
@@ -30,19 +43,14 @@ pip install -e .[dev]
 pytest
 ```
 
-## Repository Visibility
+## Availability
 
-Keep the remote repository private for now. When you create it on GitHub, GitLab, or another host, set the visibility to `private` before the first push.
+Hispansion publishes this repository publicly. Public access does not expand
+the software license beyond ESA Member States or grant rights to the bundled
+input datasets.
 
 ## Notes
 
-- Large map files, CBOR illumination files, pickles, and generated outputs are intentionally ignored by Git.
-- DEM and CBOR inputs are organized under `data/` for easier local access while remaining untracked in Git.
-
-## First Push Checklist
-
-1. Create the remote repository as `private`.
-2. Install dependencies locally with `pip install -e .[dev]`.
-3. Run `pytest`.
-4. Review `git status` to confirm no large generated files are staged.
-5. Push `main` and verify the CI workflow passes.
+- Selected DEM and CBOR fixtures are tracked so clone-based tests and examples can run.
+- Other large maps, CBOR inputs, pickles, and generated outputs remain ignored by Git.
+- The tracked input datasets are not covered by the software license; see [NOTICE](NOTICE).

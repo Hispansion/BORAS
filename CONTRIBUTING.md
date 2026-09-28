@@ -30,7 +30,9 @@ pytest
 - Prefer small, focused changes.
 - Include a short note describing the scenario tested and whether results depend on local datasets that are not tracked in Git.
 
-## Visibility
+## Licensing
 
-The remote repository should remain private until  explicitly decide to publish or share it more broadly.
+BORAS software contributions are published under the ESA Software Community
+License - Type 3 - v1.1. The bundled input datasets are not licensed for reuse;
+see [NOTICE](NOTICE) before adding or redistributing data files.
 

@@ -1,0 +1,18 @@
+BORAS (Basic Operation Rover Analysis Software)
+Copyright (c) Carlos Aguilar Borasteros.
+
+Carlos Aguilar Borasteros is the copyright holder of the BORAS software and
+has authorized Hispansion to publish it under the ESA Software Community
+License - Type 3 - v1.1. The complete license text is in LICENSE.pdf.
+
+This license applies to the software source code, configuration files, and
+associated software documentation in this repository, including the code in
+notebooks. It does not itself grant rights to third-party dependencies or to
+input datasets such as DEM/TIFF and CBOR files under data/. No reuse rights
+for those datasets are granted by this release; contact info@hispansion.io
+to ask about separate permission before using or redistributing them.
+
+For commercial use or licensing questions, contact info@hispansion.io.
+
+BORAS is not an ESA product. Use of an ESA-authored license does not imply ESA
+ownership, sponsorship, certification, or endorsement.

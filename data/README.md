@@ -10,6 +10,7 @@ BORAS input assets are organized here for easier access.
 
 ## Notes
 
-- The large `.tif` and `.cbor` files remain ignored by Git, but this folder structure keeps them in one predictable place locally.
+- Selected `.tif` and `.cbor` fixtures are tracked for clone-based tests and examples; other large inputs remain ignored by Git.
 - Config files in `configs/` now point to these `data/` locations.
-- Most notebook references were updated to use the same paths, so the assets are easier to find and reuse.
+- Most notebook references were updated to use the same paths, so the assets are easier to locate for BORAS runs.
+- These input datasets are not covered by the BORAS software license. No reuse or redistribution rights are granted for them; request separate permission from the copyright holder.
